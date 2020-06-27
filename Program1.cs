@@ -6,7 +6,7 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {   Factorial f1 = new Factorial();
-            f1.recursion(5);
+            f1.recursion(20);
             Console.WriteLine("the answer is {0}", Factorial.recursionAnswer);
         }
     }
@@ -25,8 +25,12 @@ namespace ConsoleApp1
             //  how to pass the decremented version of a to next invocation of recursion method
 
             Factorial.recursionAnswer *= a;
-            recursion(--a);
+
+            if (a == 1) { return; }
+            else { 
+            recursion(--a);}
         }
 
     }
 }
+
