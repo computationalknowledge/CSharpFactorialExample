@@ -19,7 +19,14 @@ namespace ConsoleApp1
         public void recursion(int a)
         {   // how can we pass the results of our recursive calculation
             // from one invocation of this method to the next?
-            recursion(--a);
+            // order of operations
+            // BO MD AS
+            // bracketted operations
+            // multiple and division
+            // addition and subtraction
+
+            int recursionAnswer = a * (a - 1);
+            recursion(--recursionAnswer);
             
         }
 
