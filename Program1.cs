@@ -13,7 +13,7 @@ namespace ConsoleApp1
 
     class Factorial
     {
-        public static int recursionAnswer;
+        public static int recursionAnswer = 1;
         public void recursion(int a)
         {   // how can we pass the results of our recursive calculation
             // from one invocation of this method to the next?
